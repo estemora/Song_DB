@@ -1,0 +1,46 @@
+<! FILE: songs.html
+   Estefan Mora, Transy U
+   CS 3144, Winter 2023
+   
+   Song Selection Interface
+>
+
+<!DOCTYPE html>
+<head> <title> Korean Group Song Database </title>
+	<link type ="text/css" href="songstyles.css" rel = "stylesheet">
+</head>
+<body>
+	<header>
+	<h2> Estefan's Korean Group Song Database </h2> 
+	<ul>
+	<li> <a href="home.html"> Home </a></li>
+  	<li> <a href="labels.html">Labels </a></li>
+  	<li> <a href="bands.html">Bands  </a></li>
+	<li> <a href="artists.html">Artists  </a></li>
+	<li> <a href="albums.html">Albums  </a></li>
+	<li> <a href="songs.html">Songs  </a></li>
+	<li> <a href="trackSingers.html">Track Singers </a></li>
+	<li> <a href="fileUpload.html">File Upload  </a></li>
+	<li> <a href="manual_insert.html">Manual Insert  </a></li>
+	</ul>
+	</header>
+	
+	<form method="post" action = "songSelect.cgi">
+	<br> <br> <br>
+	<h2> Song Selection </h2>
+	<h3> Sort By: </h3>
+	<select name="song_sort"> <br>
+	<option value ="Unordered"> Unordered </option>
+	<option value="Song Alphabetical Order"> Song Alphabetical Order </option>
+	<option value="Group Alphabetical Order"> Group Alphabetical Order </option>
+	<option value="Album Alphabetical Order"> Album Alphabetical Order </option>
+	<option value="Language Alphabetical Order"> Language Alphabetical Order </option>
+	<option value="Song Type Alphabetical Order"> Song Type Alphabetical Order </option>
+	<option value="Ascending Song Release Date"> Ascending Song Release Date </option>
+	<option value="Descending Song Release Date"> Descending Song Release Date </option>
+	</select> <br> <br>
+	<input type="submit" value ="Submit">
+
+</form>
+</body>
+</html>

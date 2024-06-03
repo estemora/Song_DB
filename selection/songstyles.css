@@ -1,0 +1,50 @@
+</* FILE: songstyles.css
+   Estefan Mora, Transy U
+   CS 3144, Winter 2023'
+
+   Using to try and make my database more visually pleasing!
+   (all info sourced from https://www.w3schools.com/css/) */>
+
+body{
+	background-color: #99ccff;
+}
+
+form {
+  	text-align: center;
+}
+
+h2 {
+	text-align: center;
+}
+
+h4 {
+	text-align: center;
+}
+
+</* navigation bar styling */>
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  length: 11.11%
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 45px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+li a:hover {
+  background-color: red;
+}

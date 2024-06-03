@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<head> <title> Korean Group Song Database </title> </head>
+	<link type ="text/css" href="songstyles.css" rel = "stylesheet">
+
+	<header>
+	<h2> Estefan's Korean Group Song Database </h2> 
+	<ul>
+	<li> <a href="home.html"> Home </a></li>
+  	<li> <a href="labels.html">Labels </a></li>
+  	<li> <a href="bands.html">Bands  </a></li>
+	<li> <a href="artists.html">Artists  </a></li>
+	<li> <a href="albums.html">Albums  </a></li>
+	<li> <a href="songs.html">Songs  </a></li>
+	<li> <a href="trackSingers.html">Track Singers </a></li>
+	<li> <a href="fileUpload.html">File Upload  </a></li>
+	<li> <a href="manual_insert.html">Manual Insert  </a></li>
+	</ul>
+
+	</header>
+	<br> <br> <br>
+	<h2> ALL DATES ARE IN THE FORMAT: (YYYY-MM-DD) </h2> <br>
+	<h4> Labels File Insert </h4>
+	<h4> FORMAT: <br> string, date <br>
+	label_name, label_founding_date </h4>
+	<form id='tags' name='dataEntryTags' enctype='multipart/form-data' action='mass_label_insert.cgi' method='post'>
+   	Select file to upload:  <input type='file' name='fileName' size='40' accept=".csv" />
+	<input type = 'submit'>
+	</form>
+	</br> </br> </br>
+	
+	<br> <br> <br>
+	<h4> Band File Insert </h4>
+	<h4> FORMAT: <br> string, string, 'date', int <br>
+	group_name, label_name, group_debut_date, number_of_members </h4>
+	<form id='tags' name='dataEntryTags' enctype='multipart/form-data' action='mass_band_insert.cgi' method='post'>
+   	Select file to upload:  <input type='file' name='fileName' size='40' accept=".csv" />
+	<input type = 'submit'>
+	</form>
+	</br> </br> </br>
+
+	<br> <br> <br>
+	<h4> Artist File Insert </h4>
+	<h4> FORMAT: <br> string, string, string, 'date', 'date' <br>
+	stage_name, group_name, legal_name, birthdate, debut_date </h4>
+	<form id='tags' name='dataEntryTags' enctype='multipart/form-data' action='mass_artist_insert.cgi' method='post'>
+   	Select file to upload:  <input type='file' name='fileName' size='40' accept=".csv" />
+	<input type = 'submit'>
+	</form>
+	</br> </br> </br>
+	
+	<br> <br> <br>
+	<h4> Album File Insert </h4>
+	<h4> FORMAT: <br> string, string, 'date', string <br>
+	album_name, group_name, album_release_date, album_type </h4>
+	<form id='tags' name='dataEntryTags' enctype='multipart/form-data' action='mass_album_insert.cgi' method='post'>
+   	Select file to upload:  <input type='file' name='fileName' size='40' accept=".csv" />
+	<input type = 'submit'>
+	</form>
+	</br> </br> </br>
+	
+	<br> <br> <br>
+	<h4> Song File Insert </h4>
+	<h4> FORMAT: <br> string, 'date', string, string, string, string <br>
+	song_title, release_date, group_name, track_type, language, album_name </h4>
+	<form id='tags' name='dataEntryTags' enctype='multipart/form-data' action='mass_song_insert.cgi' method='post'>
+   	Select file to upload:  <input type='file' name='fileName' size='40' accept=".csv" />
+	<input type = 'submit'>
+	</form>
+	</br> </br> </br>
+	
+	<br> <br> <br>
+	<h4> Track Singers File Insert </h4>
+	<h4> FORMAT: <br> string, string, string <br>
+	stage_name, group_name, song_title </h4>
+	<form id='tags' name='dataEntryTags' enctype='multipart/form-data' action='mass_trackSinger_insert.cgi' method='post'>
+   	Select file to upload:  <input type='file' name='fileName' size='40' accept=".csv" />
+	<input type = 'submit'>
+	</form>
+	</br> </br> </br>
+   	</form>
+</body>
+</html>

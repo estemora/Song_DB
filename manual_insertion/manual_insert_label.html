@@ -1,0 +1,39 @@
+<! FILE: manual_insert_label.html
+   Estefan Mora, Transy U
+   CS 3144, Winter 2023
+   
+   Manual Label Insertion Interface
+>
+
+<!DOCTYPE html>
+<head> <title> Korean Group Song Database </title>
+	<link type ="text/css" href="songstyles.css" rel = "stylesheet">
+</head>
+<body>
+	<header>
+	<h2> Estefan's Korean Group Song Database </h2> 
+	<h2> Manual Upload Interface: Click on which table you want to upload on! <h3>
+	<ul>
+	<li> <a href="home.html"> Home </a></li>
+  	<li> <a href="manual_insert_label.html">Label Insert </a></li>
+  	<li> <a href="manual_insert_band.html">Group Insert  </a></li>
+	<li> <a href="manual_insert_artist.html">Artist Insert  </a></li>
+	<li> <a href="manual_insert_album.html">Album Insert  </a></li>
+	<li> <a href="manual_insert_song.html">Song Insert  </a></li>
+	<li> <a href="manual_insert_trackSinger.html">Track Singer Insert </a></li>
+	<li> <a href="manual_insert.html">Manual Insert  </a></li>
+	</ul>
+	</header>
+
+	<form method="post" action = "manual_insert_label.cgi">
+	<br> <h2> Manual Label Insert </h2> <br>
+	<br> Label Name:  
+	<input type="text" name="label_name" required> <br>
+		
+	<br> Label Founding Date:  
+	<input type="date" name="founding_date"> <br> <br>
+	<input type="submit" value ="Submit">
+	</br> </br> </br>
+</form>
+</body>
+</html>
